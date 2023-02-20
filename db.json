@@ -1,12 +1,6 @@
 {
   "todos": [
     {
-      "id": 1,
-      "title": "sdf",
-      "content": "sdf",
-      "done": false
-    },
-    {
       "id": 2,
       "title": "222",
       "content": "222",
