@@ -6,6 +6,7 @@ const middlewares = jsonServer.defaults();
 
 server.use(middlewares);
 // Add this before server.use(router)
+server.use(express.urlencoded({ extended: true }));
 server.use(
   jsonServer.rewriter({
     "/api/*": "/$1",
@@ -16,6 +17,5 @@ server.use(router);
 server.listen(4000, () => {
   console.log("JSON Server is running");
 });
-server.use(express.urlencoded({ extended: true }));
 // Export the Server API
 module.exports = server;
