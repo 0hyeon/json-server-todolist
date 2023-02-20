@@ -3,6 +3,7 @@ const jsonServer = require("json-server");
 const server = jsonServer.create();
 const router = jsonServer.router("db.json");
 const middlewares = jsonServer.defaults();
+const cors = require("cors");
 
 server.use(middlewares);
 // Add this before server.use(router)
@@ -16,6 +17,13 @@ server.use(router);
 server.listen(4000, () => {
   console.log("JSON Server is running");
 });
-
+server.use(
+  cors({
+    origin: "*",
+    credentials: true,
+    optionsSuccessStatus: 200,
+  })
+);
+server.use(express.urlencoded({ extended: true }));
 // Export the Server API
 module.exports = server;
