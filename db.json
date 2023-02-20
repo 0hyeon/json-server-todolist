@@ -13,16 +13,10 @@
       "done": true
     },
     {
-      "id": 3,
-      "title": "sdfsdf",
-      "content": "sdfsdf",
-      "done": false
-    },
-    {
       "id": 4,
       "title": "sdsdf",
       "content": "sdfsdf",
-      "done": false
+      "done": true
     }
   ],
   "posts": [
