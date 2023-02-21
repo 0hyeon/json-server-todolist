@@ -4,8 +4,8 @@ const os = require("os");
 const path = require("path");
 const jsonServer = require("json-server");
 const server = jsonServer.create();
-
-// const middlewares = jsonServer.defaults();
+const router = jsonServer.router("db.json");
+const middlewares = jsonServer.defaults();
 // fs.copyFile("db.json", os.tmpdir() + "/db.json", function (err) {
 //   if (err) console.log(err);
 //   else console.log("copy file succeed to" + os.tmpdir());
