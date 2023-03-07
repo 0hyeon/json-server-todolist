@@ -1,3 +1,37 @@
 {
+  "todos": [
+    {
+      "id": 3,
+      "title": "sdfsdf",
+      "content": "sdfsd",
+      "done": false
+    },
+    {
+      "id": 4,
+      "title": "sdfsd",
+      "content": "sdfs",
+      "done": true
+    },
+    {
+      "id": 5,
+      "title": "sdf",
+      "content": "sdf",
+      "done": true
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
   "cart": []
 }
